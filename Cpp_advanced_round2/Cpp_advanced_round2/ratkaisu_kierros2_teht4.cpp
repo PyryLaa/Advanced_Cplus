@@ -3,13 +3,13 @@
 
 
 
-bool is_prime(int);
+bool is_prime(unsigned long long);
 void prime_between();
-bool is_prime_half(int);
-bool is_prime_root(int);
+bool is_prime_half(unsigned long long);
+bool is_prime_root(unsigned long long);
 
 int main() {
-	int a;
+	unsigned long long a;
 	char choice;
 	do {
 		std::cout << "Give an integer, and this program will tell you if it is a prime or not: ";
@@ -28,7 +28,7 @@ int main() {
 	return 0;
 }
 
-bool is_prime(int num) {
+bool is_prime(unsigned long long num) {
 	if (num == 0 || num == 1) {
 		return false;
 	}
@@ -71,7 +71,7 @@ void prime_between() {
 	c = 0;
 }
 
-bool is_prime_half(int num) {
+bool is_prime_half(unsigned long long num) {
 	if (num == 0 || num == 1) {
 		return false;
 	}
@@ -83,7 +83,7 @@ bool is_prime_half(int num) {
 	}
 	return true;
 }
-bool is_prime_root(int num) {
+bool is_prime_root(unsigned long long num) {
 	if (num == 0 || num == 1) {
 		return false;
 	}

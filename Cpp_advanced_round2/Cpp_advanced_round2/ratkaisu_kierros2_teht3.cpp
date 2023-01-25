@@ -1,3 +1,6 @@
+//This program tells the user which of the 4 numbers given is the smalles
+//Does this by first calling with all numbers from main, then from the first function calling the second one with 3 and the last one with 2. Then returns the smallest from the first one called
+
 #include <iostream>
 
 
