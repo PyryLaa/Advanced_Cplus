@@ -44,10 +44,10 @@ bool is_prime(unsigned long long num) {
 void prime_between() {
 	std::cout << "\nNow the program will print primes between 1-10000 and the precentage of the primes.";
 
-	int b = 10000;
+	unsigned long long b = 10000;
 	float c = 0;
 
-	for (int i = 1; i <= b; i++) {
+	for (unsigned long long i = 1; i <= b; i++) {
 		if (is_prime(i)) {
 			std::cout << i << ' ';
 			c++;
@@ -55,14 +55,14 @@ void prime_between() {
 	}
 	std::cout << "\nThe precentage of primes from all of the numbers is: " << ((c / b) * 100) << "% and the total amount of them is: " << c;
 	c = 0;
-	for (int i = 1; i <= b; i++) {
+	for (unsigned long long i = 1; i <= b; i++) {
 		if (is_prime_half(i)) {
 			c++;
 		}
 	}
 	std::cout << "\nHere is the precentage and amount when the testing is for n-1: " << (c / b) * 100 << "%, amount of numbers: " << c;
 	c = 0;
-	for (int i = 1; i <= b; i++) {
+	for (unsigned long long i = 1; i <= b; i++) {
 		if (is_prime_root(i)) {
 			c++;
 		}
