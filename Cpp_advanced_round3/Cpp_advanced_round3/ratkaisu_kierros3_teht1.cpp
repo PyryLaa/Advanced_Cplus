@@ -2,28 +2,23 @@
 
 #include <iostream>
 
-struct Clock {
-	int sec = 0;
-	int min = 0;
-	int hour = 0;
-} time_unit;
-
-void sec_convert(int);
+void sec_convert(int, int&,int&, int&);
 
 int main() {
-	int seconds;
+	int sec;
+	int hours, minutes, seconds;
 
 	std::cout << "This program will convert the given amount of second to hours, minutes and seconds." << "\nGive the amount of seconds to be converted: ";
-	std::cin >> seconds;
+	std::cin >> sec;
 
-	sec_convert(seconds);
+	sec_convert(sec, hours, minutes,  seconds);
 
-	std::cout << seconds << " seconds is " << time_unit.hour << " hours, " << time_unit.min << " minutes, " << time_unit.sec << " seconds.";
+	std::cout << sec << " seconds is " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds.";
 }
 
-void sec_convert(int s) {
-	time_unit.hour = s / 3600;
-	time_unit.min = (s % 3600) / 60;
-	time_unit.sec = ((s % 3600) % 60);
+void sec_convert(int s, int& hrs, int& mins, int& secs) {
+	hrs = s / 3600;
+	mins = (s % 3600) / 60;
+	secs = ((s % 3600) % 60);
 	
 }
