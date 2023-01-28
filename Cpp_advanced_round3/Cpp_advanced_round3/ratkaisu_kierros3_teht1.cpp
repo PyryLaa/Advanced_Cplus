@@ -14,6 +14,7 @@ int main() {
 	sec_convert(sec, hours, minutes,  seconds);
 
 	std::cout << sec << " seconds is " << hours << " hours, " << minutes << " minutes, " << seconds << " seconds.";
+	return 0;
 }
 
 void sec_convert(int s, int& hrs, int& mins, int& secs) {
