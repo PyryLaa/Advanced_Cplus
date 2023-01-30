@@ -13,7 +13,7 @@ void time_converter(int&, int&, int&, int&);
 void sec_converter(int&, Time_ty*);
 
 int main() {
-	Time_ty times_a, times_b, *time_remain = &times_a;
+	Time_ty times_a, times_b,times_c, *time_remain = &times_c;
 	int seconds_a, seconds_b, seconds_remain;
 
 	std::cout << "Give 2 times and this program will count their difference.";
