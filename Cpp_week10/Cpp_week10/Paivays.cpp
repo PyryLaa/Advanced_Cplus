@@ -34,16 +34,37 @@ void Date::askDate() {
 	std::cin >> month;
 	std::cout << "Give year: ";
 	std::cin >> year;
-
+	
+	
 	
 }
 
-Date::Date() { //Constructor
-	std::cout << "Give day number: ";
-	std::cin >> day;
-	std::cout << "\nGive month number: ";
-	std::cin >> month;
-	std::cout << "\nGive year: ";
-	std::cin >> year;
+Date::Date() { //Default constructor
+	day = 1;
+	month = 1;
+	year = 1970;
 	
 }
+Date::Date(int mDay, int mMonth, int mYear) : day(mDay), month(mMonth), year(mYear) {}; //Parametric constructor
+
+Date::~Date() {
+	std::cout << "Date destructor" << '\n';
+};
+
+void Date::addDate() {
+	if (day < 31) {
+		day++;
+	}
+	else {
+		day = 1;
+		if (month < 12) {
+			month++;
+		}
+		else {
+			month = 1;
+			year++;
+		}
+	}
+
+}
+
