@@ -4,6 +4,11 @@
 
 class Person {
 public:
+
+	Person();
+	Person(std::string, int);
+	~Person();
+
 	void setName(std::string m_Name);
 	void setAge(int m_Name);
 

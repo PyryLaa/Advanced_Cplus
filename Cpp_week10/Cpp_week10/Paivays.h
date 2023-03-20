@@ -21,9 +21,5 @@ public:
 	void printDate();
 	void askDate();
 	void addDate();
-
-	
-
-	
 	
 };

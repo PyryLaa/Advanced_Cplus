@@ -23,3 +23,14 @@ void Person::printData() {
 	std::cout << "\nName: " << name;
 	std::cout << "\nAge: " << age;
 }
+
+Person::Person() {
+	name = "Matti";
+	age = 20;
+}
+
+Person::Person(std::string aName, int aAge) : name(aName), age(aAge) {};
+
+Person::~Person() {
+	std::cout << "Person deconstructor";
+}
