@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Paivays.h"
+#include "Date.h"
 
 void Date::setDay(int m_day) {
 	day = m_day;
