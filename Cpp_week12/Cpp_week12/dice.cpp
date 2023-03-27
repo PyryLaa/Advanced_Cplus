@@ -14,7 +14,7 @@ Dice::Dice(int a) {
 int Dice::getLastValue() {//Returns the latest value of the dice
 	int value = 0;
 	for (int i = 0; i < amount; i++) {
-		value = value + dies[i];
+		value = value + dice[i];
 	}
 	return value;
 }
@@ -23,13 +23,13 @@ void Dice::throwDice() {//"Throws" the dice, giving it random value between 1 an
 	srand((unsigned)time(NULL));
 
 	for (int i = 0; i < amount; i++) {
-		dies[i] = 1 + (rand() % 6);
+		dice[i] = 1 + (rand() % 6);
 	}
 }
 
 void Dice::lastThrowValue() {//prints the value of the dice
 	for (int i = 0; i < amount; i++) {
-		std::cout << "Dice number " << i + 1 << " value: " << dies[i] << '\n';
+		std::cout << "Dice number " << i + 1 << " value: " << dice[i] << '\n';
 	}
 }
 

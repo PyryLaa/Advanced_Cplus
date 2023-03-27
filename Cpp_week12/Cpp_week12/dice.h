@@ -13,7 +13,7 @@ class Dice {
 
 	private:
 		
-		int dies[5] = { 1, 1, 1, 1, 1 };
+		int dice[5] = { 1, 1, 1, 1, 1 };
 		int amount;
 
 };
