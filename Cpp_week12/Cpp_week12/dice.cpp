@@ -36,6 +36,10 @@ void Dice::lastThrowValue() {//prints the value of the dice
 void Dice::setDice() { //Ask the user for the amount of dice to be used
 	std::cout << "How many dice you want to use?(1-5): ";
 	std::cin >> amount;
+	while (amount > 5) {
+		std::cout << "Invalid amount of dice, please give amount between 1 and 5\n";
+		std::cin >> amount;
+	}
 }
 
 int Dice::getDice() {//Returns the amount of dice used
