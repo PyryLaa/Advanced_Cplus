@@ -20,7 +20,7 @@ int Dice::getLastValue() {//Returns the latest value of the dice
 }
 
 void Dice::throwDice() {//"Throws" the dice, giving it random value between 1 and 6
-	srand((unsigned)time(NULL));
+	srand((unsigned)time(nullptr));
 
 	for (int i = 0; i < amount; i++) {
 		dice[i] = 1 + (rand() % 6);
