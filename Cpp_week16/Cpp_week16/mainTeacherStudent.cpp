@@ -9,7 +9,7 @@
 
 
 int main() {
-	int i = 0;
+	
 	std::vector<Person*> School;
 
 	std::cout << "Creating teachers and adding them to the school vector\n";
@@ -32,7 +32,11 @@ int main() {
 		p->printData();
 	}
 
-	
+	for (Person* p : School) {
+		delete p;
+	}
+
+	School.clear();
 
 	return 0;
 }

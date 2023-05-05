@@ -17,7 +17,7 @@ public:
 	void get_courses() const;
 	std::string get_number() const;
 
-	void print_data() const;
+	void printData() const;
 
 private:
 	int screds = 0; 

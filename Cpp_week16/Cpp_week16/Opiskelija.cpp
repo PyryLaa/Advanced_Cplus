@@ -43,11 +43,11 @@ void Student::get_courses() const{
 	}
 }
 
-void Student::print_data() const {
-	std::cout << "Student's name: " << getName()<< std::endl;
+void Student::printData() const {
+	Person::printData();
 	std::cout << "Student number: " << get_number() << std::endl;
-	std::cout << "Student's age: " << getAge() << std::endl;
-	getAddress().print_address();
+	
+	//getAddress().print_address();
 
 	std::cout << "Student has passed these courses:\n";
 	get_courses();

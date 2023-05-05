@@ -45,10 +45,9 @@ void Teacher::delete_course(const std::string& aCourse) {
 	i++;
 }
 
-void Teacher::print_data() const {
-	std::cout << "\nTeachers name: " << getName() << std::endl;
-	std::cout << "Age: " << getAge() << std::endl;
-	getAddress().print_address();
+void Teacher::printData() const {
+	Person::printData();
+	//getAddress().print_address();
 	std::cout << "\nTeachers subject is: " << get_subject() << std::endl;
 	if (courses.size() > 0) {
 		std::cout << "Teacher is teaching these courses: ";
@@ -57,7 +56,7 @@ void Teacher::print_data() const {
 		}
 	}
 	else {
-		std::cout << "Teacher is not currentyl teaching any courses";
+		std::cout << "Teacher is not currently teaching any courses";
 	}
 
 }

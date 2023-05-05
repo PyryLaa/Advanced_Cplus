@@ -19,12 +19,13 @@ public:
 	int getAge() const;
 	Address getAddress() const;
 
-	void printData() const;
+	virtual void printData() const;
 
 	void addPerson();
 
 private:
+	Address home_address;
+protected:
 	std::string name;
 	int age;
-	Address home_address;
 };

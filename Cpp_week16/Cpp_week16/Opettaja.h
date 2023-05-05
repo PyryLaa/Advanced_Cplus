@@ -15,7 +15,7 @@ public:
 	std::string get_subject() const;
 	void add_course(const std::string& aCourse);
 	void delete_course(const std::string& aCourse);
-	void print_data() const;
+	void printData() const;
 
 
 private:
